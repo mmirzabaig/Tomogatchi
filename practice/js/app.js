@@ -3,26 +3,13 @@ $('.startP').on('click', () => {
   console.log('hello');
   let time = 10;
 $('.startP').text(time);
+
   const setTimer = () => {
-
-
 
     let timer = setInterval(() => {
         $('.startP').text(time-1);
       time--;
       console.log(time);
-
-      if ($('#energy').val() === 0) {
-        clearInterval(timer);
-        $('.startP').text('GAME OVER');
-      }
-      if ($('#MOOD').val() === 0) {
-        clearInterval(timer);
-        $('.startP').text('GAME OVER');
-      }
-      let $MOODVal = $('#MOOD').val();
-      $MOODVal--;
-       $('#MOOD').val($MOODVal);
 
       let ageVal = $('#age').val();
 
@@ -34,7 +21,6 @@ $('.startP').text(time);
       $('#energy').val($energyVal);
 
       if (time  === 0) {
-        $('.startP').text('YOU WIN');
         clearInterval(timer);
 
         // console.log(age)
@@ -103,8 +89,8 @@ $('.sleep').on('click', () => {
 })
 $('.play').on('click', () => {
 
-  let $MOODVal = $('#MOOD').val();
-  $MOODVal+=3;
-   $('#MOOD').val($MOODVal);
+  let $boredomVal = $('#boredom').val();
+  $boredomVal+=3;
+   $('#boredom').val($boredomVal);
 
 })
