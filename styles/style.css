@@ -1,0 +1,148 @@
+.startP {
+  position: relative;
+  left: 50%;
+  top: 50px;
+  border-radius: 50%;
+    /* text-align: center; */
+}
+.mountain, .mountain-two, .mountain-three {
+    position: absolute;
+    bottom: 0;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 180px solid #7ac1e4;
+    z-index: 1;
+}
+.mountain {
+  left: 630px;
+   bottom: 170px;
+}
+.mountain-two {
+    left: 540px;
+    bottom: 160px;
+    opacity: .3;
+    z-index: 0;
+}
+.mountain-three {
+    left: 800px;
+    bottom: 180px;
+    opacity: .5;
+    z-index: 0;
+}
+.mountain-top {
+    position: absolute;
+    right: -65px;
+    border-left: 65px solid transparent;
+    border-right: 65px solid transparent;
+    border-bottom: 77px solid #ceeaf6;
+    z-index: 2;
+}
+.mountain-cap-1, .mountain-cap-2, .mountain-cap-3 {
+    position: absolute;
+    top: 70px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #ceeaf6;
+}
+.mountain-cap-1 { left: -55px; }
+.mountain-cap-2 { left: -25px; }
+.mountain-cap-3 { left: 5px; }
+.cloud, .cloud:before, .cloud:after {
+  position: absolute;
+  width: 70px;
+	height: 30px;
+	background: #fff;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+}
+.cloud {
+  opacity: .5;
+  bottom: 300px;
+  -webkit-animation: cloud 50s infinite linear;
+          animation: cloud 50s infinite linear;
+}
+@-webkit-keyframes cloud {
+    0%   { left: -100px; }
+    100% { left: 1000px; }
+}
+@keyframes cloud {
+
+    0%   { left: -100px; }
+    100% { left: 1000px; }
+}
+.cloud:before {
+  content: '';
+  left: 50px;
+}
+.cloud:after {
+  content: '';
+  left: 25px;
+  top: -10px;
+}
+body {
+background:#b4ddf0;
+}
+/* progress{
+  background: pink;
+} */
+#game {
+  /* margin: 50%; */
+  top: 20%;
+  margin-top: -200px 0 0 100px;
+  left: 40%;
+  /* margin-left: 100px; */
+  border: 2px solid black;
+  position: fixed;
+  /* background: blue; */
+  padding: 300px 400px 300px 400px;
+}
+
+.bird {
+position: relative;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/174479/bird-cells.svg);
+	background-size: auto 100%;
+	width: 90px;
+	height: 130px;
+  margin-top: -30%;
+	margin-left: 52%;
+	will-change: background-position;
+
+	animation-name: fly-cycle;
+	animation-duration: 1s;
+	animation-delay: -0.5s;
+	animation-timing-function: steps(10);
+	animation-iteration-count: infinite;
+}
+@keyframes fly-cycle {
+
+	100% {
+		background-position: -3600px 0;
+	}
+
+}
+h1 {
+  position: relative;
+	margin: 65px 0 0 70px;
+	font-family: 'Bungee Shade', cursive;
+  font-size: 60px;
+	text-align: center;
+}
+#mood {
+  font-family: 'Monoton', cursive;
+  /* border: 2px solid black; */
+  font-size: 30px;
+  position: relative;
+  margin: 115px 0 0 150px;
+}
+#options{
+  position: relative;
+
+	padding: 0 100px 0 650px;
+  /* margin-top: 20px; */
+}
+#optButton{
+  font-family: 'Monoton', cursive;
+  font-size: 26px;
+  padding: 5px 5px 5px 5  px;
+  /* margin:  0 50px 0 -50px; */
+}
