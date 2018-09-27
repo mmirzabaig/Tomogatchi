@@ -179,11 +179,6 @@ $('.sleep').on('click', () => {
   $('#energy').val($energyVal);
 
 
-  let $ageVal = $('#age').val();
-  $ageVal += 2;
-  $('#age').val($ageVal);
-
-
   let $hungerVal = $('#hunger').val();
   $hungerVal += 2;
   $('#hunger').val($hungerVal);
