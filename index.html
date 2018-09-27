@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title></title>
+  <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
   <link rel="stylesheet" href="styles/style.css">
@@ -17,15 +18,14 @@
 
   <h1>Tomogotchi</h1>
 
-
   <div id='mood'>
 
     <p>Energy</p>
-    <progress id="energy" value="3" max="10"></progress>
+    <progress id="energy" value="10" max="10"></progress>
     <p>Hunger</p>
-    <progress id="hunger" value="5" max="10"></progress>
+    <progress id="hunger" value="0" max="10"></progress>
     <p>MOOD</p>
-    <progress id="MOOD" value="2" max="10"></progress>
+    <progress id="MOOD" value="10" max="10"></progress>
     <p>Age</p>
     <progress id="age" value="0" max="10"></progress>
     <div class="cloud"></div>
@@ -65,7 +65,10 @@
   <div class="bird"></div>
   <div class="cloud"></div>
   <div class='startP'><button>Start</button></div>
+  <button class='nameButton'>Submit</button>
+  <div id='htc'><input class='inputName' type="text" name="" value=""></div>
   <script src='js/app.js'></script>
+
 </body>
 
 </html>

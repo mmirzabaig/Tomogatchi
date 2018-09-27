@@ -1,3 +1,24 @@
+.nameButton {
+  position: relative;
+  left: 49.5%;
+  top: -400px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+}
+.name {
+  position: relative;
+  left: 47%;
+  top: -400px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+}
+#htc {
+  position: relative;
+  left: 47%;
+  top: -400px;
+  margin-bottom: 0px;
+  border-radius: 50%;
+}
 .startP {
   font-size: 30px;
   position: relative;
@@ -108,6 +129,8 @@ position: relative;
   margin-top: -30%;
 	margin-left: 52%;
 	will-change: background-position;
+
+
 
 	animation-name: fly-cycle;
 	animation-duration: 1s;
